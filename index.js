@@ -1,9 +1,9 @@
 'use strict'
 
-const fixedGot = async (path, mustThrowWithinThisPeriodIfAnyError, retryInterval = 1000, timeOrigin) => {
-    const start = timeOrigin || performance.now()
+const got = require('got')
 
-    console.log(`start is ${start}`);
+const fixedGot = (path, mustThrowWithinThisPeriodIfAnyError, retryInterval = 1000, timeOrigin) => {
+    const start = timeOrigin || performance.now()
 
     return got(path, {
         retry: {
@@ -15,3 +15,5 @@ const fixedGot = async (path, mustThrowWithinThisPeriodIfAnyError, retryInterval
         }
     })
 }
+
+module.exports = fixedGot
