@@ -1,0 +1,22 @@
+{
+  "name": "@krave/fixed-got",
+  "version": "0.0.1",
+  "description": "A very simplified version of got",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krave1986/fixed-got.git"
+  },
+  "author": "Krave",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krave1986/fixed-got/issues"
+  },
+  "homepage": "https://github.com/krave1986/fixed-got#readme",
+  "dependencies": {
+    "got": "^11.8.6"
+  }
+}
